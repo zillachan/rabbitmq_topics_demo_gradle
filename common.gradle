@@ -1,0 +1,17 @@
+group 'RabbitMQClient'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.rabbitmq:amqp-client:' + AMQP_VERSION
+    compile 'org.slf4j:slf4j-api:' + SLF4J_VERSION
+    compile 'ch.qos.logback:logback-classic:' + LOGBACK_VERSION
+    testCompile 'junit:junit:' + JUNIT_VERSION
+}

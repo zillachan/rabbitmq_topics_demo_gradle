@@ -1,0 +1,4 @@
+rootProject.name = 'rabbitmq_topics_demo_gradle'
+
+include 'consumer'
+include 'producer'
